@@ -70,7 +70,7 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 1. 具备运行环境：JDK1.6、Maven3.0、MySql5。
 2. 修改src\main\resources\jeesite.properties文件中的数据库设置参数。
 3. 根据修改参数创建对应MySql数据库（数据库编码：UTF-8）。
-4. 运行db\init-db.bat脚本，即可导入表结构及演示数据
+4. 运行bin\resresh-db\refresh-db.bat脚本，即可导入表结构及演示数据(linux操作系统：在控制台中切换至项目根目录，运行命令：mvn antrun:run -Prefresh-db)
 5. 运行bin\run-jetty.bat，启动Web服务器（第一次运行，需要下载依赖jar包，请耐心等待）。
 6. 最高管理员账号，用户名：thinkgem 密码：admin
 
@@ -81,7 +81,7 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 
 ## 如何交流、反馈、参与贡献？
 
-* QQ Group：127515876(已满)   209330483
+* QQ Group：127515876   209330483(已满)
 * E-mail：<mailto:thinkgem@163.com>
 * Github：<https://github.com/thinkgem/jeesite>
 * 开源中国：<http://git.oschina.net/thinkgem/jeesite>
@@ -100,11 +100,3 @@ JeeSite 提供了常用工具进行封装，包括日志工具、缓存工具、
 4. 如果再发布的产品中包含一个Notice文件，则在Notice文件中需要带有Apache Licence。你可以在Notice中增加自己的许可，但不可以表现为对Apache Licence构成更改。
 3. Apache Licence也是对商业应用友好的许可。使用者也可以在需要的时候修改代码来满足需要并作为开源或商业产品发布/销售
 
-## 未来开发计划
-
-* 代码生成器：自动建立表结构、生成的mvc中包括属性字段，哪些可作为查询条件等等。
-* 模块管理功能：可方便增减模块，如内容管理模块不需要，可直接启用或停用。
-* 内容管理模块：文章评论、完善内容关键字、图片模型、专题功能、会员功能。
-* 添加通用模块：公告功能、内部短消息、在线列表、短信和邮件群发功能。
-* 公共工具封装：嵌入地图、生成报表、WebService
-* 移动客户端：暂定为Android客户端开发
